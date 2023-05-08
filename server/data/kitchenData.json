@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Aline",
+    "title": "Κουζίνα από ξύλο δρυς, πορτάκια μασίφ δρυς σε διάφορους χρωματισμούς ξύλου, καθώς και decape.",
+    "images": [
+      "./images/ALINE/aline_mobilegno_6.jpg",
+      "./images/ALINE/aline_mobilegno_3.jpg",
+      "./images/ALINE/aline_mobilegno_4.jpg",
+      "./images/ALINE/aline_mobilegno_5.jpg"
+    ]
+  },
+  {
+    "label": "Carlotta",
+    "title": "Κουζίνα από ξύλο καρυδιάς, πορτάκια μασίφ καρυδιάς με βασικό χρώμα καρυδιάς σκούρο. Κατόπιν παραγγελίας μπορεί να βγεί και σε άλλους χρωματισμούς.",
+    "images": [
+      "./images/CARLOTTA/carlotta_mobilegno_3.jpg",
+      "./images/CARLOTTA/carlotta_mobilegno_4.jpg",
+      "./images/CARLOTTA/carlotta_mobilegno_5.jpg",
+      "./images/CARLOTTA/carlotta_mobilegno_6.jpg"
+    ]
+  },
+  {
+    "label": "Fosca",
+    "title": "Κουζίνα μασιφ από ξύλο βελανιδιάς, πορτάκια μασίφ βελανιδιάς σε απόχρωση βελανιδιάς. Υπάρχει η επιλογή για στρογγυλά τελειώματα με πορτάκια μασιφένια στρογγυλά.",
+    "images": [
+      "./images/FOSCA/fo7.jpg",
+      "./images/FOSCA/fo1.jpg",
+      "./images/FOSCA/fo6.jpg"
+    ]
+  },
+  {
+    "label": "Iko",
+    "title": "",
+    "images": [
+      "./images/IKO/iko_gri.jpg",
+      "./images/IKO/iko_aragosta.jpg",
+      "./images/IKO/iko_blu.jpg",
+      "./images/IKO/iko_blu2.jpg",
+      "./images/IKO/iko_gia.jpg"
+    ]
+  },
+  {
+    "label": "Nicole",
+    "title": "",
+    "images": [
+      "./images/NICOLE/ni_ne.jpg",
+      "./images/NICOLE/ni_ros_g.jpg",
+      "./images/NICOLE/ni_bia.jpg",
+      "./images/NICOLE/ni_blu.jpg",
+      "./images/NICOLE/ni_gia.jpg"
+    ]
+  },
+  {
+    "label": "Opera",
+    "title": "",
+    "images": [
+      "./images/OPERA/opera_lyons_5.jpg",
+      "./images/OPERA/opera_lyons_3.jpg",
+      "./images/OPERA/opera_lyons_4.jpg",
+      "./images/OPERA/opera_lyons_6.jpg"
+    ]
+  },
+  {
+    "label": "Thema",
+    "title": "",
+    "images": [
+      "./images/THEMA/system_line_lyons_6.jpg",
+      "./images/THEMA/thema_lyons_3.jpg",
+      "./images/THEMA/thema_lyons_5.jpg",
+      "./images/THEMA/thema_lyons_6.jpg",
+      "./images/THEMA/system_line_lyons_5.jpg"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+.socialMedia svg {
+  @apply text-4xl;
+}
+/* * {
+  @apply transition-colors;
+} */
+
+.bgPrimary {
+  @apply bg-primary dark:bg-darkPrimary;
+}
+.bgSecondary {
+  @apply bg-secondary dark:bg-darkSecondary;
+}
+.textPrimary {
+  @apply text-txtprimary dark:text-darkTxtprimary;
+}
+.textSecondary {
+  @apply text-txtsecondary dark:text-darkTxtsecondary;
+}
+.borderPrimary {
+  @apply border-primary dark:border-darkPrimary;
+}
+.borderText {
+  @apply border-txtprimary dark:border-darkTxtprimary;
+}
+.navSpaces {
+  @apply sm:bg-txtprimary dark:sm:bg-darkTxtprimary;
+}
+.bgText {
+  @apply bg-txtprimary dark:bg-darkTxtprimary;
+}
+.svgArrowColor {
+  @apply text-white dark:text-txtprimary;
+}
+.svgSocialsTransition {
+  @apply group-hover:text-txtprimary;
+}
