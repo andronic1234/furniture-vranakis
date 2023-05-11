@@ -11,7 +11,6 @@ export interface IHomeSection {
 }
 
 //Button Component
-
 interface INotLink {
   isLink: false;
   linkTo?: string;
@@ -37,7 +36,6 @@ interface ILink {
 export type IButton = ILink | INotLink;
 
 //ContactForm Component
-
 type selectObj = {
   [key: string]: {
     placeholder?: string;
@@ -93,6 +91,13 @@ export interface IKitchenCard {
   title: string;
   label: string;
   images: string[];
+}
+
+//InfoCircle Component
+export interface IInfoCircle {
+  title: string;
+  description: string;
+  image: string;
 }
 
 //NavLink Component

@@ -3,6 +3,7 @@ import Button from "../components/Button";
 
 import Footer from "../components/Footer";
 import HomeSection from "../components/HomeSection";
+import InfoCircle from "../components/InfoCircle";
 import SEO from "../components/SEO";
 
 function Home() {
@@ -46,17 +47,17 @@ function Home() {
             <h1 className="text-6xl textPrimary mb-10 text-center">
               Γιατί να επιλέξετε εμάς
             </h1>
-            <h1 className="text-2xl w-4/6 textPrimary mb-7 text-center">
+            <h3 className="text-2xl w-4/6 textPrimary mb-7 text-center">
               Η πολυετή εμπειρία στην κατασκευή επιπλων κουζίνας, ντουλάπας και
               μπάνιου μας δίνει την δυνατότητα να φροντίζουμε ώστε τα πάντα να
               βρίσκονται σε τέτοια εντέλεια, ώστε κάθε λεπτό που αφιερώνετε εκεί
               να σας γεμίζει ικανοποίηση και έμπνευση για να προσφέρετε στον
               εαυτό σας. στιγμές αξιοθαύμαστες και δημιουργικές.
-            </h1>
+            </h3>
 
             <Button
               content="Δείτε τις δουλειές μας"
-              dimensions={{ width: 52, height: 10 }}
+              dimensions={{ width: 48, height: 10 }}
               isLink={true}
               linkTo="/services"
             />
@@ -89,7 +90,24 @@ function Home() {
           direction={false}
         />
       </div>
-      <div className="h-1/3 flex items-center justify-center flex-col gap-10">
+      <div className="h-auto bgSecondary grid grid-cols-3">
+        <InfoCircle
+          title="Κουζίνες"
+          description="lorem ipsum dolor sit am emit"
+          image="./images/header/banner.jpg"
+        />
+        <InfoCircle
+          title="Κουζίνες"
+          description="lorem ipsum dolor sit am emit"
+          image="./images/header/banner.jpg"
+        />
+        <InfoCircle
+          title="Κουζίνες"
+          description="lorem ipsum dolor sit am emit"
+          image="./images/header/banner.jpg"
+        />
+      </div>
+      <div className="h-1/3 bgSecondary flex items-center justify-center flex-col gap-10">
         <h1 className="text-4xl">
           Ελάτε να φτιάξουμε την κουζίνα των ονείρων σας...
         </h1>
@@ -100,6 +118,7 @@ function Home() {
           linkTo="/services"
         />
       </div>
+
       <Footer />
     </div>
   );
