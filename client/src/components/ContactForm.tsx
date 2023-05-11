@@ -3,6 +3,7 @@ import React, { FC, useState } from "react";
 import { validateEmail, validatePhone } from "../utils";
 
 import type { IContactForm } from "../interfaces/interfaces";
+import Button from "./Button";
 
 /** This is a functional component that renders a contact form. It takes in props of
  * type `IContactForm` which includes inputs, selects, textarea, and setAlert. It uses the `useState`
@@ -173,9 +174,11 @@ const ContactForm: FC<IContactForm> = (props) => {
       {formInputs}
       {typeof formSelects === "undefined" ? <></> : formSelects}
       {typeof textArea === "undefined" ? <></> : textArea}
-      <button className="w-28 h-8 rounded text-primary bg-accent hover:bg-secondAccent hover:text-txtprimary transition-colors duration-300">
-        Αποστολή
-      </button>
+      <Button
+        content="Αποστολή"
+        isLink={false}
+        dimensions={{ width: 28, height: 8 }}
+      />
     </form>
   );
 };

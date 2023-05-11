@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
+import Button from "./Button";
 
 import type { IKitchenCard } from "../interfaces/interfaces";
 
@@ -92,12 +93,13 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
       <p className="text-center m-5 break-words">{title}</p>
       <div className="h-20">
         <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center">
-          <Link
-            to="/contact"
-            className="flex items-center mb-8 justify-center rounded text-secondary w-44 h-10 bg-accent hover:bg-secondAccent hover:text-txtprimary transition-colors duration-300s"
-          >
-            Ζητήστε προσφορά
-          </Link>
+          <Button
+            content="Δείτε τις δουλειές μας"
+            dimensions={{ width: 44, height: 10 }}
+            isLink={true}
+            linkTo="/contact"
+            styling="mb-8"
+          />
         </div>
       </div>
     </div>

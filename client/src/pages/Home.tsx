@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 import Footer from "../components/Footer";
 import HomeSection from "../components/HomeSection";
@@ -52,12 +53,13 @@ function Home() {
               να σας γεμίζει ικανοποίηση και έμπνευση για να προσφέρετε στον
               εαυτό σας. στιγμές αξιοθαύμαστες και δημιουργικές.
             </h1>
-            <Link
-              to="/services"
-              className="w-52 h-10 rounded flex items-center justify-center text-primary bg-accent hover:bg-secondAccent hover:text-txtprimary transition-colors duration-300"
-            >
-              Δείτε τις δουλειές μας
-            </Link>
+
+            <Button
+              content="Δείτε τις δουλειές μας"
+              dimensions={{ width: 52, height: 10 }}
+              isLink={true}
+              linkTo="/services"
+            />
           </section>
         </div>
       </div>
@@ -85,6 +87,17 @@ function Home() {
             paragraph: "lorem ipsum dolor sit amet emitt",
           }}
           direction={false}
+        />
+      </div>
+      <div className="h-1/3 flex items-center justify-center flex-col gap-10">
+        <h1 className="text-4xl">
+          Ελάτε να φτιάξουμε την κουζίνα των ονείρων σας...
+        </h1>
+        <Button
+          content="Ζητήστε Προσφορά"
+          dimensions={{ width: 44, height: 10 }}
+          isLink={true}
+          linkTo="/services"
         />
       </div>
       <Footer />

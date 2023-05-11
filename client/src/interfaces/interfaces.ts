@@ -10,6 +10,32 @@ export interface IHomeSection {
   direction: boolean;
 }
 
+//Button Component
+
+interface INotLink {
+  isLink: false;
+  linkTo?: string;
+  styling?: string;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
+  content: string;
+  dimensions: {
+    width: number;
+    height: number;
+  };
+}
+interface ILink {
+  isLink: true;
+  linkTo: string;
+  styling?: string;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
+  content: string;
+  dimensions: {
+    width: number;
+    height: number;
+  };
+}
+export type IButton = ILink | INotLink;
+
 //ContactForm Component
 
 type selectObj = {
