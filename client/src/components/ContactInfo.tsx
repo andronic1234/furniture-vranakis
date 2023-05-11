@@ -2,6 +2,10 @@ import React, { FC } from "react";
 
 import type { IContactInfo } from "../interfaces/interfaces";
 
+/** This code defines a functional component called `ContactInfo` that takes in props of type
+ * `IContactInfo`. The component then destructures the `text` and `links` properties from the props
+ * object. The text property contains contact information, while the links property contains social media links.
+ */
 const ContactInfo: FC<IContactInfo> = (props) => {
   const { text, links } = props;
 

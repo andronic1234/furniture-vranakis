@@ -6,6 +6,13 @@ import type { IKitchenCard } from "../interfaces/interfaces";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
+/** This is a functional component called `KitchenCard` that takes in props of type `IKitchenCard`. It
+ * displays a card with an image carousel, title, description, and a button. The image carousel allows
+ * the user to navigate through different images by clicking on buttons or using arrow buttons.
+ * The component uses React hooks such as `useState` to manage state and `useEffect` to
+ * handle side effects. It also uses the `Link` component from `react-router-dom` to navigate to a
+ * different page when the button is clicked.
+ */
 const KitchenCard: FC<IKitchenCard> = (props) => {
   const { title, label, images } = props;
 

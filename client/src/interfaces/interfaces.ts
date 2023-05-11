@@ -1,3 +1,15 @@
+//HomeSection Component
+type homeContent = {
+  title: string;
+  paragraph: string;
+};
+
+export interface IHomeSection {
+  content: homeContent;
+  image: string;
+  direction: boolean;
+}
+
 //ContactForm Component
 
 type selectObj = {

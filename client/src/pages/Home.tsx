@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../components/Footer";
+import HomeSection from "../components/HomeSection";
 import SEO from "../components/SEO";
 
 function Home() {
@@ -17,10 +18,10 @@ function Home() {
       <div className="relative h-[calc(100vh-65px)]">
         <div className="absolute md:h-[calc(100vh-65px)] sm:h-[calc(50vh-65px)] h-[calc(60vh-65px)] md:w-5/12 w-screen bgSecondary flex md:justify-center items-center lg:flex-col z-20">
           <div className=" md:ml-2">
-            <h1 className="text-4xl md:text-3xl ml-10 md:ml-0 lg:text-4xl font-bold textPrimary">
+            <h1 className="text-4xl md:text-3xl ml-10 md:ml-0 lg:text-4xl mb-2 font-bold textPrimary">
               Έπιπλα <span className="text-accent">BPANAKIS</span>
             </h1>
-            <h2 className="lg:text-2xl sm:text-xl text-2xl font-bold ml-10 md:ml-0 textPrimary">
+            <h2 className="lg:text-2xl sm:text-xl text-2xl font-bold ml-10 md:ml-0 textPrimary animate-textSlide">
               Η σωστή επιλογή για
               <span className="overflow-hidden whitespace-nowrap text-accent font-bold">
                 {" "}
@@ -40,11 +41,11 @@ function Home() {
       {/*Secondary part of page*/}
       <div className="h-auto bgPrimary">
         <div className="grid grid-cols-1">
-          <div className=" mt-20 flex items-center justify-center flex-col gap-10 mb-5">
+          <section className=" mt-20 flex items-center justify-center flex-col gap-10 mb-5">
             <h1 className="text-6xl textPrimary mb-10 text-center">
               Γιατί να επιλέξετε εμάς
             </h1>
-            <h1 className="text-2xl w-4/6 textPrimary mb-7">
+            <h1 className="text-2xl w-4/6 textPrimary mb-7 text-center">
               Η πολυετή εμπειρία στην κατασκευή επιπλων κουζίνας, ντουλάπας και
               μπάνιου μας δίνει την δυνατότητα να φροντίζουμε ώστε τα πάντα να
               βρίσκονται σε τέτοια εντέλεια, ώστε κάθε λεπτό που αφιερώνετε εκεί
@@ -57,10 +58,35 @@ function Home() {
             >
               Δείτε τις δουλειές μας
             </Link>
-          </div>
+          </section>
         </div>
       </div>
-      <div className="h-screen bgSecondary"></div>
+      <div className="h-auto bgSecondary">
+        <HomeSection
+          image="./images/header/banner.jpg"
+          content={{
+            title: "Κουζίνες",
+            paragraph: "lorem ipsum dolor sit amet emitt",
+          }}
+          direction={false}
+        />
+        <HomeSection
+          image="./images/header/banner.jpg"
+          content={{
+            title: "Ντουλάπες",
+            paragraph: "lorem ipsum dolor sit amet emitt",
+          }}
+          direction={true}
+        />
+        <HomeSection
+          image="./images/header/banner.jpg"
+          content={{
+            title: "Πόρτες",
+            paragraph: "lorem ipsum dolor sit amet emitt",
+          }}
+          direction={false}
+        />
+      </div>
       <Footer />
     </div>
   );

@@ -6,8 +6,11 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+
+import ErrorBoundary from "./components/ErrorBoundary";
 import Navbar from "./components/Navbar";
-import "./index.css";
+
+import "./assets/index.css";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -18,7 +21,7 @@ const ErrorPage = lazy(() => import("./pages/errorPage"));
 const router = createBrowserRouter(
   createRoutesFromElements(
     // Pages are Nested inside the Navbar component
-    <Route path="/" element={<Navbar />}>
+    <Route path="/" element={<Navbar />} errorElement={<ErrorBoundary />}>
       <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />

@@ -1,13 +1,24 @@
 import React, { FC, useState } from "react";
 
+import { validateEmail, validatePhone } from "../utils";
+
 import type { IContactForm } from "../interfaces/interfaces";
 
+/** This is a functional component that renders a contact form. It takes in props of
+ * type `IContactForm` which includes inputs, selects, textarea, and setAlert. It uses the `useState`
+ * hook to manage the state of the input values, select values, textarea value, error state, and phone
+ * error state. It also includes functions to handle input change, select change, and textarea change.
+ * The component maps through the inputs and selects to render the appropriate form elements and
+ * includes validation for email and phone inputs. Finally, it includes a submit handler that sends the
+ * form data to an API endpoint and displays an alert message based on the response.
+ */
 const ContactForm: FC<IContactForm> = (props) => {
   const { inputs, selects, textarea, setAlert } = props;
   const [inputValues, setInputValues] = useState({});
   const [selectsValues, setSelectsValues] = useState({});
   const [textareaValues, setTextareaValues] = useState("");
   const [error, setError] = useState(false);
+  const [phoneError, setPhoneError] = useState(false);
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValues({ ...inputValues, [e.target.name]: e.target.value });
@@ -15,10 +26,17 @@ const ContactForm: FC<IContactForm> = (props) => {
       /*Email validation event*/
     }
     if (e.target.name === "email") {
-      if (!isValidEmail(e.target.value)) {
+      if (!validateEmail(e.target.value)) {
         setError(true);
       } else {
         setError(false);
+      }
+    }
+    if (e.target.name === "phone") {
+      if (!validatePhone(e.target.value)) {
+        setPhoneError(true);
+      } else {
+        setPhoneError(false);
       }
     }
   };
@@ -43,7 +61,16 @@ const ContactForm: FC<IContactForm> = (props) => {
       {/* If email validation fails show this element */}
       {item === "email" ? (
         error ? (
-          <h2 style={{ color: "red" }}>{"Το email δεν είναι έγκυρο."}</h2>
+          <h2 className="text-danger">{"Το email δεν είναι έγκυρο."}</h2>
+        ) : (
+          <></>
+        )
+      ) : (
+        <></>
+      )}
+      {item === "phone" ? (
+        phoneError ? (
+          <h2 className="text-danger">{"Ο αριθμός δεν είναι έγκυρος."}</h2>
         ) : (
           <></>
         )
@@ -99,15 +126,23 @@ const ContactForm: FC<IContactForm> = (props) => {
     textArea: textarea ? textareaValues : undefined,
   };
 
-  function isValidEmail(email: string) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (error) {
-      alert("Email is not valid");
-      return;
+      return setAlert({
+        alert: {
+          message: "Σφάλμα. Το email δεν είναι έγκυρο.",
+          state: false,
+        },
+      });
+    }
+    if (phoneError) {
+      return setAlert({
+        alert: {
+          message: "Σφάλμα. Ο αριθμός δεν είναι έγκυρος.",
+          state: false,
+        },
+      });
     }
     (e.target as HTMLFormElement).reset();
     await fetch("/api", {

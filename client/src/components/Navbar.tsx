@@ -10,6 +10,11 @@ import Loading from "./Loading";
 import NavLinkComponent from "./NavLinkComponent";
 import ScrollToTop from "./ScrollToTop";
 
+/** This is a functional component that renders a navbar with various
+ * functionalities such as dark mode toggle, responsive menu, and scroll event. It also renders the
+ * main content of the website using the `Outlet` component from `react-router-dom`. The component uses
+ * various hooks such as `useState`, `useEffect`, and `useLocation` to manage state and handle events.
+ */
 function Navbar() {
   const { pathname } = useLocation();
 
@@ -82,7 +87,7 @@ function Navbar() {
         <img
           src="./images/logo.png"
           onClick={() => navigate("/")}
-          className={`absolute top-2 sm:top-auto md:w-64 sm:w-36 sm:left-3 w-64 cursor-pointer ${
+          className={`absolute top-3 sm:top-auto md:w-64 sm:w-36 sm:left-3 w-44 cursor-pointer ${
             show ? "" : "animate-dropDown"
           }`}
         />

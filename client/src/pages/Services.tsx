@@ -33,13 +33,13 @@ function Services() {
         type="website"
       />
       <div className="h-auto">
-        <div className="h-[50vh] bgSecondary flex flex-col  gap-10 items-center justify-center text-5xl textPrimary font-semibold text-center">
+        <section className="h-[50vh] bgSecondary flex flex-col  gap-10 items-center justify-center text-5xl textPrimary font-semibold text-center">
           <h1>Οι Υπηρεσίες μας</h1>
           <h3 className="text-xl w-2/4">
             Δείτε την συλλογή φωτογραφιών μας και επικοινωνήστε μαζί μας για να
             κάνουμε τις σκέψεις σας πραγματικότητα.
           </h3>
-        </div>
+        </section>
         {/* Kitchens component */}
         <div className="flex justify-center items-center flex-col">
           <div className="flex  items-center justify-center h-32 w-screen text-4xl font-bold text-center bgPrimary text-accent">
