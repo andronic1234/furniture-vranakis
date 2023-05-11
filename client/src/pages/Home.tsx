@@ -6,6 +6,9 @@ import HomeSection from "../components/HomeSection";
 import InfoCircle from "../components/InfoCircle";
 import SEO from "../components/SEO";
 
+
+// ** TODO ** use the normal images for all components. Add descriptive text for each component that doesn't have any.
+
 function Home() {
   return (
     <div className="w-screen h-screen">

@@ -3,6 +3,8 @@ import React from "react";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
+// ** TODO ** Add images and text here.
+
 function About() {
   return (
     <div className="bgSecondary textPrimary w-screen h-[calc(100vh-65px)]">

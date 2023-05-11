@@ -89,7 +89,7 @@ export interface IContactInfo {
 //KitchenCard Component
 export interface IKitchenCard {
   title: string;
-  label: string;
+  description: string;
   images: string[];
 }
 

@@ -7,6 +7,7 @@ import type { IHomeSection } from "../interfaces/interfaces";
  * the option to choose the direction of the image.
  * @param props - An object containing the properties passed to the HomeSection component.
  * @returns The HomeSection component is being returned.
+ * @todo Make this responsive on all screens
  */
 const HomeSection: FC<IHomeSection> = (props) => {
   const { content, image, direction } = props;

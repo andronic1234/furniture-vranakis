@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import KitchenCard from "../components/KitchenCard";
 import SEO from "../components/SEO";
 
+// ** TODO ** Add sections for bathroom furniture, wardrobes and doors. Also add images and titles/labels.
+
 function Services() {
   const [kitchens, setKitchens] = useState([]);
 
@@ -48,8 +50,8 @@ function Services() {
           <div className="grid gap-8 mt-10 mb-16 grid-cols-1 md:grid-cols-2 md:gap-12 lg:grid-cols-3 xl:gap-16">
             {kitchens.map((kitchen: IKitchenCard, i: number) => (
               <KitchenCard
-                label={kitchen.label}
                 title={kitchen.title}
+                description={kitchen.description}
                 images={kitchen.images}
                 key={i}
               />

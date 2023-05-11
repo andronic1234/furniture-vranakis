@@ -8,14 +8,19 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 /** This is a functional component called `KitchenCard` that takes in props of type `IKitchenCard`. It
- * displays a card with an image carousel, title, description, and a button. The image carousel allows
- * the user to navigate through different images by clicking on buttons or using arrow buttons.
- * The component uses React hooks such as `useState` to manage state and `useEffect` to
- * handle side effects. It also uses the `Link` component from `react-router-dom` to navigate to a
- * different page when the button is clicked.
+ * displays a card with an image gallery that can be navigated using arrow buttons, a title, a label,
+ * and a button. The component uses state hooks to keep track of the current image index and whether or
+ * not the image is fading in/out. It also maps over the `images` prop to create a list of buttons that
+ * correspond to each image in the gallery.
+ *
+ * @param props - The following properties need to be provided: `images`, `title` and `label`.
+ *
+ * @returns The KitchenCard component is being returned.
+ *
+ * @todo: Rename the component, it will be used for other furniture except of kitchens. Potentially remove the button component.
  */
 const KitchenCard: FC<IKitchenCard> = (props) => {
-  const { title, label, images } = props;
+  const { title, description, images } = props;
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
@@ -84,13 +89,13 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
                 ? "xl:w-96 xl:h-72 w-80 h-64 rounded-t opacity-30 transition-opacity"
                 : "xl:w-96 xl:h-72 w-80 h-64 rounded-t opacity-100 transition-opacity"
             }
-            alt={label}
+            alt={description}
           />
           <div className="flex items-center justify-center">{listItems}</div>
         </div>
       </div>
-      <h2 className="text-center text-4xl m-5">{label}</h2>
-      <p className="text-center m-5 break-words">{title}</p>
+      <h2 className="text-center text-4xl m-5">{title}</h2>
+      <p className="text-center m-5 break-words">{description}</p>
       <div className="h-20">
         <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center">
           <Button

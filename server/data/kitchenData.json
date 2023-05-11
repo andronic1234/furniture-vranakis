@@ -1,7 +1,7 @@
 [
   {
-    "label": "Aline",
-    "title": "Κουζίνα από ξύλο δρυς, πορτάκια μασίφ δρυς σε διάφορους χρωματισμούς ξύλου, καθώς και decape.",
+    "title": "Aline",
+    "description": "Κουζίνα από ξύλο δρυς, πορτάκια μασίφ δρυς σε διάφορους χρωματισμούς ξύλου, καθώς και decape.",
     "images": [
       "./images/ALINE/aline_mobilegno_6.jpg",
       "./images/ALINE/aline_mobilegno_3.jpg",
@@ -10,8 +10,8 @@
     ]
   },
   {
-    "label": "Carlotta",
-    "title": "Κουζίνα από ξύλο καρυδιάς, πορτάκια μασίφ καρυδιάς με βασικό χρώμα καρυδιάς σκούρο. Κατόπιν παραγγελίας μπορεί να βγεί και σε άλλους χρωματισμούς.",
+    "title": "Carlotta",
+    "description": "Κουζίνα από ξύλο καρυδιάς, πορτάκια μασίφ καρυδιάς με βασικό χρώμα καρυδιάς σκούρο. Κατόπιν παραγγελίας μπορεί να βγεί και σε άλλους χρωματισμούς.",
     "images": [
       "./images/CARLOTTA/carlotta_mobilegno_3.jpg",
       "./images/CARLOTTA/carlotta_mobilegno_4.jpg",
@@ -20,8 +20,8 @@
     ]
   },
   {
-    "label": "Fosca",
-    "title": "Κουζίνα μασιφ από ξύλο βελανιδιάς, πορτάκια μασίφ βελανιδιάς σε απόχρωση βελανιδιάς. Υπάρχει η επιλογή για στρογγυλά τελειώματα με πορτάκια μασιφένια στρογγυλά.",
+    "title": "Fosca",
+    "description": "Κουζίνα μασιφ από ξύλο βελανιδιάς, πορτάκια μασίφ βελανιδιάς σε απόχρωση βελανιδιάς. Υπάρχει η επιλογή για στρογγυλά τελειώματα με πορτάκια μασιφένια στρογγυλά.",
     "images": [
       "./images/FOSCA/fo7.jpg",
       "./images/FOSCA/fo1.jpg",
@@ -29,8 +29,8 @@
     ]
   },
   {
-    "label": "Iko",
-    "title": "",
+    "title": "Iko",
+    "description": "",
     "images": [
       "./images/IKO/iko_gri.jpg",
       "./images/IKO/iko_aragosta.jpg",
@@ -40,8 +40,8 @@
     ]
   },
   {
-    "label": "Nicole",
-    "title": "",
+    "title": "Nicole",
+    "description": "",
     "images": [
       "./images/NICOLE/ni_ne.jpg",
       "./images/NICOLE/ni_ros_g.jpg",
@@ -51,8 +51,8 @@
     ]
   },
   {
-    "label": "Opera",
-    "title": "",
+    "title": "Opera",
+    "description": "",
     "images": [
       "./images/OPERA/opera_lyons_5.jpg",
       "./images/OPERA/opera_lyons_3.jpg",
@@ -61,8 +61,8 @@
     ]
   },
   {
-    "label": "Thema",
-    "title": "",
+    "title": "Thema",
+    "description": "",
     "images": [
       "./images/THEMA/system_line_lyons_6.jpg",
       "./images/THEMA/thema_lyons_3.jpg",
