@@ -15,6 +15,8 @@ import Button from "./Button";
  */
 const ContactForm: FC<IContactForm> = (props) => {
   const { inputs, selects, textarea, setAlert } = props;
+
+  const [loading, setLoading] = useState(false);
   const [inputValues, setInputValues] = useState({});
   const [selectsValues, setSelectsValues] = useState({});
   const [textareaValues, setTextareaValues] = useState("");
@@ -145,13 +147,15 @@ const ContactForm: FC<IContactForm> = (props) => {
         },
       });
     }
-    (e.target as HTMLFormElement).reset();
+    setLoading(true);
     await fetch("/api", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(FinalInfo),
     }).then((response) => {
+      setLoading(false);
       if (response.ok) {
+        (e.target as HTMLFormElement).reset();
         return setAlert({
           alert: { message: "Η φόρμα στάλθηκε επιτυχώς.", state: true },
         });
@@ -179,6 +183,20 @@ const ContactForm: FC<IContactForm> = (props) => {
         isLink={false}
         dimensions={{ width: 28, height: 8 }}
       />
+      {loading ? (
+        <div className="flex items-center justify-center">
+          <div
+            className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+            role="status"
+          >
+            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+              Loading...
+            </span>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
     </form>
   );
 };

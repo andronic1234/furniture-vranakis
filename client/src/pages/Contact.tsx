@@ -1,10 +1,6 @@
 import { useState } from "react";
 
-import Alert from "../components/Alert";
-import ContactForm from "../components/ContactForm";
-import ContactInfo from "../components/ContactInfo";
-import Footer from "../components/Footer";
-import SEO from "../components/SEO";
+import { Alert, ContactForm, ContactInfo, Footer, SEO } from "../components";
 
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";

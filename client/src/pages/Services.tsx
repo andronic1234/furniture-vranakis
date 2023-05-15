@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import type { IKitchenCard } from "../interfaces/interfaces";
 
-import Footer from "../components/Footer";
-import KitchenCard from "../components/KitchenCard";
-import SEO from "../components/SEO";
+import { Footer, KitchenCard, SEO } from "../components";
 
 // ** TODO ** Add sections for bathroom furniture, wardrobes and doors. Also add images and titles/labels.
 

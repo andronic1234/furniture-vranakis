@@ -1,11 +1,4 @@
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
-
-import Footer from "../components/Footer";
-import HomeSection from "../components/HomeSection";
-import InfoCircle from "../components/InfoCircle";
-import SEO from "../components/SEO";
-
+import { Button, Footer, HomeSection, InfoCircle, SEO } from "../components";
 
 // ** TODO ** use the normal images for all components. Add descriptive text for each component that doesn't have any.
 

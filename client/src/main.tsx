@@ -7,8 +7,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
-import ErrorBoundary from "./components/ErrorBoundary";
-import Navbar from "./components/Navbar";
+import { ErrorBoundary, Navbar } from "./components";
 
 import "./assets/index.css";
 
