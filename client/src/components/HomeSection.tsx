@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
 import type { IHomeSection } from "../interfaces/interfaces";
 
@@ -15,6 +15,7 @@ const HomeSection: FC<IHomeSection> = (props) => {
   const imgElement = (
     <img
       src={image}
+      alt={content.title}
       className={`w-2/3 my-8 rounded-3xl ${direction ? "ml-8" : "mr-8"}`}
     ></img>
   );

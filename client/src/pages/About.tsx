@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Footer, SEO } from "../components";
 
 // ** TODO ** Add images and text here.

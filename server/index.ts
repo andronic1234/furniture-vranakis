@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import express, { Application, Request, Response } from "express";
-// import path from "path";
+import path from "path";
 dotenv.config();
 
 import kitchenData from "./data/kitchenData.json";
@@ -16,7 +16,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-// app.use(express.static(path.resolve(__dirname, "../client/dist")));
+app.use(express.static(path.resolve(__dirname, "../client/dist")));
 const PORT = process.env.PORT || 8000;
 
 app.post("/api", async (req: Request, res: Response) => {
@@ -47,9 +47,9 @@ app.post("/api", async (req: Request, res: Response) => {
 app.get("/kitchens", (req, res) => {
   res.status(200).json(kitchenData);
 });
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve(__dirname, "../client/dist", "index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../client/dist", "index.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);

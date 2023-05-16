@@ -86,6 +86,7 @@ function Navbar() {
       >
         <img
           src="./images/logo.png"
+          alt="BPANAKIS"
           onClick={() => navigate("/")}
           className={`absolute top-3 sm:top-auto md:w-64 sm:w-36 sm:left-3 w-44 cursor-pointer ${
             show ? "" : "animate-dropDown"
@@ -95,6 +96,7 @@ function Navbar() {
           onClick={() => {
             setDarkMode((prev: boolean) => !prev);
           }}
+          title="Theme"
           className={`absolute sm:right-0 sm:left-auto top-0 left-0 right-auto m-5 ${
             show ? "" : "[&_svg]:animate-dropDown"
           }`}
@@ -124,6 +126,7 @@ function Navbar() {
           onClick={() => {
             setExpandNavbar((prev: boolean) => !prev);
           }}
+          title="Menu"
           className={`sm:hidden absolute right-0 top-0 m-5  dark:text-txtsecondary ${
             show ? "" : "[&_svg]:animate-dropDown"
           }`}

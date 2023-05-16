@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 
 import Button from "./Button";
 
@@ -52,6 +52,7 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
           setCurrentIndex(index);
         }, 150);
       }}
+      title={`${title} ${index}`}
       disabled={index === currentIndex ? true : false}
       className={`-mt-4 m-1 w-3 h-3 rounded-full duration-700 borderPrimary border-2 z-20 ${
         index === currentIndex ? "bgPrimary" : ""
@@ -65,6 +66,7 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
           <div className="w-full relative">
             <button
               onClick={prevImage}
+              title={`${title} previous`}
               disabled={currentIndex === 0 ? true : false}
               className={`bgText w-10 h-10 rounded-full outline-none absolute top-[108px] xl:top-[122px] z-20 opacity-30 hover:opacity-60 ${
                 currentIndex === 0 ? "hidden" : ""
@@ -74,6 +76,7 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
             </button>
             <button
               onClick={nextImage}
+              title={`${title} next`}
               disabled={currentIndex === images.length - 1 ? true : false}
               className={`bgText w-10 h-10 rounded-full outline-none absolute right-0 top-[108px] xl:top-[122px] z-20 opacity-30 hover:opacity-60 ${
                 currentIndex === images.length - 1 ? "hidden" : ""
@@ -84,12 +87,12 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
           </div>
           <img
             src={images[currentIndex]}
+            alt={title}
             className={
               fade
                 ? "xl:w-96 xl:h-72 w-80 h-64 rounded-t opacity-30 transition-opacity"
                 : "xl:w-96 xl:h-72 w-80 h-64 rounded-t opacity-100 transition-opacity"
             }
-            alt={description}
           />
           <div className="flex items-center justify-center">{listItems}</div>
         </div>

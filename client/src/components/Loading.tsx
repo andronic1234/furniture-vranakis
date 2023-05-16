@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * The function returns a loading spinner component with specific styling.
  * @returns A functional component that renders a spinning loading animation in the center of the

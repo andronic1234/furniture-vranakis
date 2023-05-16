@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import type { IKitchenCard } from "../interfaces/interfaces";
 
@@ -35,10 +35,10 @@ function Services() {
       <div className="h-auto">
         <section className="h-[50vh] bgSecondary flex flex-col  gap-10 items-center justify-center text-5xl textPrimary font-semibold text-center">
           <h1>Οι Υπηρεσίες μας</h1>
-          <h3 className="text-xl w-2/4">
+          <h2 className="text-xl w-2/4">
             Δείτε την συλλογή φωτογραφιών μας και επικοινωνήστε μαζί μας για να
             κάνουμε τις σκέψεις σας πραγματικότητα.
-          </h3>
+          </h2>
         </section>
         {/* Kitchens component */}
         <div className="flex justify-center items-center flex-col">
