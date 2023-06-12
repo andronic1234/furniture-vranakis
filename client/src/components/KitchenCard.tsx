@@ -66,7 +66,7 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
           <div className="w-full relative">
             <button
               onClick={prevImage}
-              title={`${title} previous`}
+              title="Previous"
               disabled={currentIndex === 0 ? true : false}
               className={`bgText w-10 h-10 rounded-full outline-none absolute top-[108px] xl:top-[122px] z-20 opacity-30 hover:opacity-60 ${
                 currentIndex === 0 ? "hidden" : ""
@@ -76,7 +76,7 @@ const KitchenCard: FC<IKitchenCard> = (props) => {
             </button>
             <button
               onClick={nextImage}
-              title={`${title} next`}
+              title="Next"
               disabled={currentIndex === images.length - 1 ? true : false}
               className={`bgText w-10 h-10 rounded-full outline-none absolute right-0 top-[108px] xl:top-[122px] z-20 opacity-30 hover:opacity-60 ${
                 currentIndex === images.length - 1 ? "hidden" : ""

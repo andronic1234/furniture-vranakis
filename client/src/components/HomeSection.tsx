@@ -32,7 +32,7 @@ const HomeSection: FC<IHomeSection> = (props) => {
 
   return (
     <section className="bgSecondary flex">
-      <div className="flex items-center justify-end gap-5 border m-5 rounded textPrimary">
+      <div className="flex items-center justify-end gap-5 m-5 rounded textPrimary">
         {direction ? imgElement : <></>}
         {contentElement}
         {direction ? <></> : imgElement}

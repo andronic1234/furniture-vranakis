@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Συρόμενες",
+    "description": "Οι συρώμενες ντουλάπες κατασκευάζονται με μηχανισμό βαρέους τύπου, κρεμαστές από πάνω ή συρώμενες στο κάτω μέρος με μηχανισμό και πλαίσια Ίνοξ",
+    "images": [
+      "./images/Wardrobes/Syromenes/1/out.jpg",
+      "./images/Wardrobes/Syromenes/1/in.jpg",
+      "./images/Wardrobes/Syromenes/2/out.jpg",
+      "./images/Wardrobes/Syromenes/2/in.jpg",
+      "./images/Wardrobes/Syromenes/3/out.jpg",
+      "./images/Wardrobes/Syromenes/3/in.jpg"
+    ]
+  },
+  {
+    "title": "Ανοιγόμενες",
+    "description": "Στις ανοιγόμενες ντουλάπες, τα πορτάκια μπορούν να γίνουν σε λάκα, βαγκελίτη ή μελαμίνη. ",
+    "images": [
+      "./images/Wardrobes/Anoigomenes/1/out.jpg",
+      "./images/Wardrobes/Anoigomenes/1/in.jpg",
+      "./images/Wardrobes/Anoigomenes/2/out.jpg",
+      "./images/Wardrobes/Anoigomenes/2/in.jpg",
+      "./images/Wardrobes/Anoigomenes/3/out.jpg",
+      "./images/Wardrobes/Anoigomenes/3/in.jpg",
+      "./images/Wardrobes/Anoigomenes/4/out.jpg",
+      "./images/Wardrobes/Anoigomenes/4/in1.jpg",
+      "./images/Wardrobes/Anoigomenes/4/in2.jpg",
+      "./images/Wardrobes/Anoigomenes/5/out.jpg",
+      "./images/Wardrobes/Anoigomenes/5/in.jpg"
+    ]
+  }
+]

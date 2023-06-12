@@ -7,6 +7,7 @@ export default defineConfig({
     proxy: {
       "/api": "http://localhost:8000",
       "/kitchens": "http://localhost:8000",
+      "/wardrobes": "http://localhost:8000",
     },
   },
   plugins: [react()],

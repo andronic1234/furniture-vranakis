@@ -8,6 +8,7 @@ import { Footer, KitchenCard, SEO } from "../components";
 
 function Services() {
   const [kitchens, setKitchens] = useState([]);
+  const [wardrobes, setWardrobes] = useState([]);
 
   const fetchKitchenData = () => {
     fetch("/kitchens")
@@ -18,9 +19,19 @@ function Services() {
         setKitchens(data);
       });
   };
+  const fetchWardrobeData = () => {
+    fetch("/wardrobes")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setWardrobes(data);
+      });
+  };
 
   useEffect(() => {
     fetchKitchenData();
+    fetchWardrobeData();
   }, []);
 
   return (
@@ -51,6 +62,22 @@ function Services() {
                 title={kitchen.title}
                 description={kitchen.description}
                 images={kitchen.images}
+                key={i}
+              />
+            ))}
+          </div>
+        </div>
+        {/* Wardrobes component */}
+        <div className="flex justify-center items-center flex-col">
+          <div className="flex  items-center justify-center h-32 w-screen text-4xl font-bold text-center bgPrimary text-accent">
+            <h2>Ντουλάπες</h2>
+          </div>
+          <div className="grid gap-8 mt-10 mb-16 grid-cols-1 md:grid-cols-2 md:gap-12 lg:grid-cols-3 xl:gap-16">
+            {wardrobes.map((wardrobe: IKitchenCard, i: number) => (
+              <KitchenCard
+                title={wardrobe.title}
+                description={wardrobe.description}
+                images={wardrobe.images}
                 key={i}
               />
             ))}

@@ -30,7 +30,7 @@
   },
   {
     "title": "Iko",
-    "description": "",
+    "description": "Κουζίνα με πορτάκια MDF λακαρισμένα σε οποιαδήποτε απόχρωση επιλέξετε. Βγαίνει σε γυαλιστερό, ματ και σαντινέ γυαλάδα.",
     "images": [
       "./images/IKO/iko_gri.jpg",
       "./images/IKO/iko_aragosta.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Nicole",
-    "description": "",
+    "description": "Κουζίνα με πορτάκια MDF λακαρισμένα (κατασκευάζεται και με κουρμπαριστά πορτάκια) με εξωτερικές και εσωτερικές καμπύλες.",
     "images": [
       "./images/NICOLE/ni_ne.jpg",
       "./images/NICOLE/ni_ros_g.jpg",
@@ -52,7 +52,7 @@
   },
   {
     "title": "Opera",
-    "description": "",
+    "description": "Κουζίνα με πορτάκια MDF και επένδυση καπλαμά οξιά.",
     "images": [
       "./images/OPERA/opera_lyons_5.jpg",
       "./images/OPERA/opera_lyons_3.jpg",
@@ -62,7 +62,7 @@
   },
   {
     "title": "Thema",
-    "description": "",
+    "description": "Κουζίνα με πορτάκια βαγκελίτη σε ματ και γυαλιστερές αποχρώσεις.",
     "images": [
       "./images/THEMA/system_line_lyons_6.jpg",
       "./images/THEMA/thema_lyons_3.jpg",
